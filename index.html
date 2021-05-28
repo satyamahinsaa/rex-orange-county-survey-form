@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Rex Orange County Survey Form</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+     <h1 id="title">Rex Orange County Survey Form</h1>
+     <p id="description">Please fill the form, thank you :)</p>
+     <form action="" id="survey-form">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+
+          <label for="number" id="number-label">Age</label>
+          <input type="number" id="number" placeholder="Age" min="15" max="60" required>
+
+          <label for="dropdown" id="dropdown-label">Where is your region?</label>
+          <select id="dropdown" placeholder="Select">
+               <option disabled selected value>Select your region</option>
+               <option value="asia">Asia</option>
+               <option value="africa">Africa</option>
+               <option value="europe">Europe</option>
+               <option value="north-america">North America</option>
+               <option value="south-america">South America</option>
+               <option value="australia">Australia</option>
+               <option value="ocenia">Ocenia</option>
+          </select>
+
+          <label for="apps" id="hobby-label">Where do you usually listen?</label>
+          <input type="radio" name="apps" value="spotify" checked>Spotify <br>
+          <input type="radio" name="apps" value="joox">Joox <br>
+          <input type="radio" name="apps" value="Youtube">Youtube <br>
+
+          <label for="album" id="album-label">Please choose your favorite music(s)?</label>
+          <input type="checkbox" value="best-friend">Best Friend <br>
+          <input type="checkbox" value="sunflower">Sunflower <br>
+          <input type="checkbox" value="pluto-projector">Pluto Projector <br>
+
+          <label for="comments" id="comments-label">Any comments or suggestions?</label>
+          <textarea id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+
+          <button id="submit" type="submit">Submit</button>
+     </form>
+
+     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

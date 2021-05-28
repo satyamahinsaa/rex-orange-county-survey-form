@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;700&display=swap');
+
+* {
+     box-sizing: border-box;
+}
+
+body::before {
+     content: '';
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-image: linear-gradient(340deg, rgba(219, 163, 97, 0.5) 0%, rgba(255, 160, 0, 0.5) 41%, rgba(255, 255, 255, 0.5) 100%), url(img/rex-orange-county-bg.jpeg);
+     background-size: cover;
+     z-index: -1;
+}
+
+body {
+     font-family: 'Zilla Slab', serif;
+     min-height: 800px;
+}
+
+h1,
+p {
+     text-align: center;
+     color: white;
+}
+
+
+#survey-form {
+     max-width: 800px;
+     background: rgba(0, 37, 71, 0.7);
+     margin: 0 auto;
+     padding: 20px 40px;
+     color: white;
+     border-radius: 5px;
+}
+
+#name-label {
+     margin-top: 20px;
+}
+
+label {
+     display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+     display: block;
+     margin-top: 5px;
+     margin-bottom: 25px;
+     padding: 10px;
+     height: 40px;
+     width: 100%;
+     border: 0;
+     border-radius: 5px;
+     font-family: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+     margin-top: 5px;
+}
+
+#album-label,
+#comments-label {
+     margin-top: 20px;
+}
+
+textarea {
+     min-height: 100px;
+}
+
+button {
+     margin-bottom: 30px;
+     width: 100%;
+     height: 40px;
+     background-color: #37af65;
+     font-size: 1em;
+     font-weight: bold;
+     color: white;
+     border: 0;
+     border-radius: 5px;
+     cursor: pointer;
+}
